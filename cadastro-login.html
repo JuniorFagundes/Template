@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name= "viewport" content="width=device-width, initial-scale=1">
+	<title>material designer</title>
+ 	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.purple-pink.min.css" />  <!-- link da css-->
+	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>  <!-- link do javascript-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">  <!-- link da familia de fontes do framework-->
+</head> 
+ 
+ 
+<style>
+body{
+	font-family: arial;
+	background-color: #CC9999; 
+}
+.pet{
+	margin-left: 20px;
+	margin-right:20px;
+	margin-top: 20px;
+	margin-bottom: 30px;	
+}
+h1{
+	font-size: 100%;
+	color: white;
+	background-color:  ;
+
+}
+p{
+	font-size: 20px;
+	text-align: justify;
+}
+h2{
+	font-size: 35px;
+	color: black;
+	background-color:  ;
+	font-style: italic;
+}
+div{
+	text-align: left;
+}
+.cabecalho{
+	text-decoration: underline;
+	font-style: italic;
+	text-align: right;
+	font-size: 15px;
+}
+.mdl-cell{
+	background-color:#bbb;
+	height:50px;
+}
+
+.social-btn__twitter {
+    background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_twitter_black_24dp.png');
+}
+.social-btn__blogger {
+    background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_facebook_black_24dp.png');
+}
+.social-btn__gplus {
+    background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_gplus_black_24dp.png');
+    
+}
+.social-btn {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    margin: 0 16px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    opacity: 0.46;
+    border-radius: 2px;
+}
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+.btn-download.big:hover {
+background: #7C9C16;
+}
+.btn-download.big {
+background: #A2CB23;
+width: auto;
+height: 82px;
+clear: both;
+display: inline-block;
+margin-top: 10px;
+}
+.btn-download .rating_note i.flaticon-heart15 {
+font-size: 16px;
+top: -2px;
+}
+.btn-download .rating_note i {
+color: #333;
+
+left: -20px;
+right: inherit;
+
+}
+meta {
+display: none;
+}
+
+* {
+outline: 0;
+-webkit-appearance: none;
+-webkit-tap-highlight-color: transparent;
+-webkit-font-smoothing: antialiased!important;
+-moz-osx-font-smoothing: grayscale!important;
+}
+div {
+display: block;
+}
+.btn-download.big .data.type {
+font-size: 14px;
+color: #000;
+border-right: 1px solid #fff;
+padding: 13px 10px 0 20px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+width: 130px;
+text-align: center;
+background: #eee;
+}
+.btn-download.big .data.download {
+vertical-align: top;
+line-height: 1.9;
+padding: 10px 40px;
+margin-top: 3px;
+}
+.btn-download.big .data {
+display: inline-block;
+height: 82px;
+}
+p {
+display: block;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+
+.flaticon-thick7:before {
+content: '\e81f';
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before {
+font-family: "uptodown";
+font-style: normal;
+font-weight: normal;
+speak: none;
+font-variant: normal;
+text-transform: none;
+}
+.btn-download.big .data.download {
+vertical-align: top;
+line-height: 1.9;
+padding: 10px 40px;
+margin-top: 3px;
+}
+.btn-download .download i {
+top: 4px;
+}
+.btn-download i {
+position: absolute;
+right: 5px;
+top: 5px;
+color: #fff;
+opacity: 0.3;
+font-size: 50px;
+}
+.btn-download.big .data.download p {
+font-size: 12px;
+text-align: left;
+display: inline-block;
+margin-top: 3px;
+}
+.btn-download.big p {
+font-family: 'Roboto',sans-serif;
+font-weight: 300;
+color: #fff;
+margin: 0;
+}
+.btn-download.big .data.download h3.download-text {
+font-size: 40px;
+text-align: center;
+line-height: 0.7;
+display: block;
+margin: 3px 0;
+font-family: 'Roboto',sans-serif;
+font-weight: 300;
+color: #fff;
+}
+
+</style>
+<BODY BGCOLOR="#ffffcc">
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<span class="mdl-layout-title"></span>
+				<div class="mdl-layout-spacer"></div>
+
+				
+				<form action="index.html ">
+					E-mail ou Telefone&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Senha</br>
+					<input type="email" id="text" required />
+					<input type="password" id="senha" required/>
+					<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary mdl-button--raised mdl-button--mini-raised"> Entrar </button>
+				</form>
+			</div>
+		</header>
+		
+		<div class= "mdl-layout__content">
+		<main class="pet">
+		<div class="jumbotron">
+  		<div class="container"  align="left 20px">
+
+    		<h1>Cadastre-se ou faça o login</h1>
+			<form action="index.html">
+			Nome:</br><input type="text" id="txtTitulo" required/></br>
+			sobrenome:</br><input type="text" id="txtTitulo" required/></br>
+			Sexo:</br><select id="SelSexo">
+				  	<option>Selecione</option>
+					<option>Masculino</option>
+					<option>Feminino</option>
+					<option>Indefinido</option>
+				  </select><br/>
+		    Data Nascimento:</br> <input type="date" id="txtData" required /> </br>
+			Telefone:</br> <input type="phone" /></br>
+			E-mail:</br> <input type="email" id="txtData" required /></br>
+			<input id="contrato" name="contrato" type="checkbox" value="sim">
+			<label for="contrato">Aceito os termos do contrato.</label></br>
+			<input type="submit" value="Cadastrar" />
+			<input type="reset" value="Limpar" /></br>
+		</br>
+		</br>
+		</br>
+		</br>
+		</form>
+ 		</div>
+		</div>
+	
+	</main>
+
+		
+		<footer class="mdl-mini-footer">
+			<div class="mdl-mini-footer--left-section">
+				<div class="mdl-logo">Meu Canal</div>
+				<ul class="mdl-mini-footer--link-list">
+					<li><a href="#"> #####</a></li>
+					<li><a href="#">$$$$$</a></li>
+				</lu>
+			</div>
+			<div class="mdl-mini-footer--right-section">
+				
+				<ul class="mdl-mini-footer--link-list">
+					<li><a href="#"> Canal do Youtube</a></li>
+					<li><a href="#">Fórum de duvidas</a></li>
+				</lu>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
